@@ -16,10 +16,34 @@ const Bio = () => {
         Frontend Engineer
       </animated.h2>
       <div className="flex mt-7 gap-10 place-content-center">
-        <i className="fa-brands fa-github cursor-pointer"></i>
-        <i className="fa-brands fa-twitter cursor-pointer"></i>
-        <i className="fa-brands fa-linkedin cursor-pointer"></i>
-        <i className="fa-brands fa-youtube cursor-pointer"></i>
+        <a
+          href="https://www.github.com/okekevicktur"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa-brands fa-github cursor-pointer"></i>
+        </a>
+        <a
+          href="https://www.twitter.com/Vicscot1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa-brands fa-twitter cursor-pointer"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/okeke-victor"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa-brands fa-linkedin cursor-pointer"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@victorokeke1153"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa-brands fa-youtube cursor-pointer"></i>
+        </a>
       </div>
     </div>
   );

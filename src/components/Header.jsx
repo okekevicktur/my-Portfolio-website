@@ -11,7 +11,7 @@ import Theme from "./Theme";
 const Header = () => {
   return (
     <>
-      <div className="md:w-[40rem] w-[100%] md:p-8  mx-auto">
+      <div className="md:w-[40rem] w-[100%] md:px-8  mx-auto">
         <Theme />
         {/* className="h-auto bg-black flex flex-col mt-7 mx-auto gap-x-[2.5rem] md:gap-x-[1rem] md:flex-row md:w-[full] items-center p-[1rem]" */}
         <div className="md:w-[90%] items-center grid-cols-1 grid md:grid-cols-2 mt-7 md:px-12 mx-auto">
