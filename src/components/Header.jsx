@@ -5,27 +5,31 @@ import Facts from "./Facts";
 import Footer from "./Footer";
 import ProfileButtons from "./ProfileButtons";
 import Tabs from "./Tabs";
+import TabsContent from "./TabsContent";
+import Theme from "./Theme";
 
 const Header = () => {
   return (
     <>
-      <div className=" grid  container cursor-pointer text-[1.5rem] font-bold text-center w-[3rem] h-[3rem] mx-auto rounded-full content-center items-center bg-[#171f26]">
-        <i className="fa-regular fa-moon items-center"></i>
-      </div>
-      <div className=" h-auto flex flex-col mt-7 gap-[2.5rem]">
-        <div className="flex w-[8.95rem] h-[8.95rem] mx-auto rounded-full justify-center items-center  border-4 border-solid border-[#FFE071]">
-          <img
-            src={profile}
-            alt="profileImage"
-            className="w-[7.688rem] h-[7.688rem] rounded-full  bg-[#0C151D]"
-          />
+      <div className="md:w-[40rem] w-[100%] md:p-8  mx-auto">
+        <Theme />
+        {/* className="h-auto bg-black flex flex-col mt-7 mx-auto gap-x-[2.5rem] md:gap-x-[1rem] md:flex-row md:w-[full] items-center p-[1rem]" */}
+        <div className="md:w-[90%] items-center grid-cols-1 grid md:grid-cols-2 mt-7 md:px-12 mx-auto">
+          <div className="flex  w-[8.95rem] h-[8.95rem]  mx-auto rounded-full justify-center items-center  border-4 border-solid border-[#FFE071]">
+            <img
+              src={profile}
+              alt="profileImage"
+              className="w-[7.688rem] h-[7.688rem] rounded-full"
+            />
+          </div>
+          <Bio />
         </div>
-        <Bio />
         <Facts />
+        <ProfileButtons />
+        <Tabs />
+        <TabsContent />
+        <Footer />
       </div>
-      <ProfileButtons />
-      <Tabs />
-      <Footer />
     </>
   );
 };
